@@ -28,6 +28,10 @@ const ecosystems = [
     name: "Dill Network",
     role: "Node participation, network setup notes, and early infrastructure tracking.",
   },
+  {
+    name: "Drosera Network",
+    role: "Early network participation, protocol research, and testnet task tracking.",
+  },
 ];
 
 const areas = [
