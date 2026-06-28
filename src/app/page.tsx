@@ -2,26 +2,7 @@
 
 import { motion } from "framer-motion";
 
-const ecosystems = [
-  {
-    name: "Dymension",
-    role: "RollApp research, early ecosystem tracking, validator context.",
-  },
-  {
-    name: "Avail",
-    role: "Data availability network research and testnet participation.",
-  },
-  {
-    name: "BEVM / GEB",
-    role: "Bitcoin L2 ecosystem exploration and operational tracking.",
-  },
-  {
-    name: "Linera",
-    role: "Microchain architecture research and testnet workflow mapping.",
-  },
-];
-
-const projects = [
+const selectedWork = [
   {
     title: "Lyxsa",
     type: "Cross-chain USDC app",
@@ -38,33 +19,53 @@ const projects = [
   },
 ];
 
-const capabilities = [
+const quickFacts = [
+  "Based in Indonesia",
+  "Founder of Catatan Kripto",
+  "Early blockchain ecosystems",
+  "No inflated title",
+];
+
+const ecosystems = [
   {
-    title: "Ecosystem Research",
+    name: "Dymension",
+    role: "RollApp research, early ecosystem tracking, and validator context.",
+  },
+  {
+    name: "Avail",
+    role: "Data availability network research and testnet participation.",
+  },
+  {
+    name: "BEVM / GEB",
+    role: "Bitcoin L2 ecosystem exploration and operational tracking.",
+  },
+  {
+    name: "Linera",
+    role: "Microchain architecture research and testnet workflow mapping.",
+  },
+];
+
+const areas = [
+  {
+    title: "Research",
     description:
       "Following new networks, narratives, protocol mechanics, and early opportunities before they become obvious.",
   },
   {
-    title: "Testnet Participation",
+    title: "Participation",
     description:
-      "Running through campaigns, usage paths, quests, feedback loops, and eligibility requirements with a practical lens.",
+      "Running through testnets, DeFi flows, quests, feedback loops, and eligibility requirements with a practical lens.",
   },
   {
-    title: "Node and Validator Context",
+    title: "Infrastructure context",
     description:
       "Documenting setup flows, network requirements, validator programs, and operational lessons from early infrastructure work.",
   },
-];
-
-const skills = [
-  "Web3 Research",
-  "Testnet Participation",
-  "Airdrop Research",
-  "DeFi Usage",
-  "Market Notes",
-  "Validators",
-  "Node Operations",
-  "Blockchain Ecosystems",
+  {
+    title: "Community notes",
+    description:
+      "Turning messy ecosystem updates into simple notes for people who actually use the networks.",
+  },
 ];
 
 const fadeUp = {
@@ -89,11 +90,11 @@ export default function Home() {
             Randi MT
           </a>
           <div className="flex items-center gap-6 text-sm text-zinc-500 sm:gap-8">
-            <a className="transition hover:text-white" href="#about">
-              About
-            </a>
             <a className="transition hover:text-white" href="#work">
               Work
+            </a>
+            <a className="transition hover:text-white" href="#profile">
+              Profile
             </a>
             <a className="transition hover:text-white" href="#contact">
               Contact
@@ -102,13 +103,11 @@ export default function Home() {
         </div>
       </nav>
 
-      <section id="home" className="relative mx-auto flex min-h-[100dvh] max-w-6xl items-center px-5 pb-24 pt-32 sm:px-8">
+      <section id="home" className="relative mx-auto flex min-h-[88dvh] max-w-6xl items-end px-5 pb-20 pt-32 sm:px-8 md:pb-28">
         <motion.div
           animate="visible"
-          variants={{
-            visible: { transition: { staggerChildren: 0.11 } },
-          }}
-          className="max-w-5xl"
+          variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
+          className="w-full"
         >
           <motion.p
             variants={fadeUp}
@@ -120,93 +119,59 @@ export default function Home() {
           <motion.h1
             variants={fadeUp}
             transition={{ duration: 0.9, ease }}
-            className="max-w-5xl text-balance text-6xl font-medium leading-[0.95] tracking-[-0.065em] text-white sm:text-7xl md:text-8xl lg:text-9xl"
+            className="max-w-5xl text-balance text-6xl font-medium leading-[0.92] tracking-[-0.065em] text-white sm:text-7xl md:text-8xl"
           >
-            Learning in public across early crypto networks
+            Learning across testnets, DeFi paths, and early network notes.
           </motion.h1>
           <motion.p
             variants={fadeUp}
             transition={{ duration: 0.85, ease }}
             className="mt-8 max-w-2xl text-lg leading-8 text-zinc-400 md:text-xl"
           >
-            Randi MT, known as Lerand, has spent years inside crypto testnets, node setups, DeFi tasks, and community research. This site tracks the work without pretending it is bigger than it is.
+            A personal portfolio for Randi MT, known as Lerand. No inflated title, just the record.
           </motion.p>
           <motion.div
             variants={fadeUp}
             transition={{ duration: 0.85, ease }}
-            className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center"
+            className="mt-12 grid border-y border-white/10 text-sm text-zinc-500 sm:grid-cols-5"
           >
-            <a
-              href="#work"
-              className="inline-flex h-12 items-center justify-center rounded-full bg-rose-600 px-6 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:bg-rose-500 active:translate-y-0"
-            >
-              View work
-            </a>
-            <a
-              href="#about"
-              className="inline-flex h-12 items-center justify-center rounded-full border border-white/10 px-6 text-sm font-medium text-zinc-300 transition hover:-translate-y-0.5 hover:border-white/20 hover:text-white active:translate-y-0"
-            >
-              Read profile
-            </a>
+            {[
+              "Lyxsa",
+              "Catatan Kripto",
+              "Testnets",
+              "Nodes",
+              "DeFi",
+            ].map((item) => (
+              <div key={item} className="border-white/10 py-4 sm:border-r sm:last:border-r-0">
+                {item}
+              </div>
+            ))}
           </motion.div>
         </motion.div>
       </section>
 
-      <div className="relative mx-auto h-px max-w-6xl bg-gradient-to-r from-transparent via-rose-600/60 to-transparent" />
-
-      <section id="about" className="relative mx-auto max-w-6xl px-5 py-32 sm:px-8 md:py-44">
+      <section id="work" className="relative mx-auto max-w-6xl px-5 py-28 sm:px-8 md:py-36">
         <Reveal>
-          <p className="mb-6 text-sm font-medium text-rose-500">About</p>
-          <h2 className="max-w-5xl text-balance text-4xl font-medium leading-tight tracking-[-0.04em] text-white md:text-6xl">
-            A practical record of testnets, nodes, DeFi tasks, and community work.
-          </h2>
+          <div className="max-w-4xl">
+            <h2 className="text-balance text-4xl font-medium leading-tight tracking-[-0.04em] text-white md:text-6xl">
+              Selected work first.
+            </h2>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-500">
+              Two things worth showing now. More can come later when the links and proof are cleaner.
+            </p>
+          </div>
         </Reveal>
 
-        <div className="mt-16 grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20">
-          <Reveal delay={0.05}>
-            <div className="space-y-7 text-lg leading-9 text-zinc-400">
-              <p>
-                Randi MT is the founder of Catatan Kripto, an Indonesian crypto community focused on education, ecosystem research, and hands-on participation.
-              </p>
-              <p>
-                The work spans testnet participation, validator context, node operations, DeFi usage, airdrop research, and blockchain ecosystem mapping.
-              </p>
-            </div>
-          </Reveal>
-
-          <Reveal delay={0.12}>
-            <div className="divide-y divide-white/10 border-y border-white/10">
-              {ecosystems.map((ecosystem) => (
-                <div key={ecosystem.name} className="py-6">
-                  <div className="flex items-start justify-between gap-8">
-                    <h3 className="text-xl font-medium text-white">{ecosystem.name}</h3>
-                    <p className="max-w-xs text-sm leading-6 text-zinc-500">{ecosystem.role}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      <section id="work" className="relative mx-auto max-w-6xl px-5 py-32 sm:px-8 md:py-44">
-        <Reveal>
-          <p className="mb-6 text-sm font-medium text-rose-500">Selected work</p>
-          <h2 className="max-w-4xl text-balance text-4xl font-medium leading-tight tracking-[-0.04em] text-white md:text-6xl">
-            Selected notes, experiments, and web projects from the crypto side.
-          </h2>
-        </Reveal>
-
-        <div className="mt-16 divide-y divide-white/10 border-y border-white/10">
-          {projects.map((project, index) => (
+        <div className="mt-16 border-y border-white/10">
+          {selectedWork.map((project, index) => (
             <Reveal key={project.title} delay={index * 0.08}>
               <a
                 href={project.href}
-                className="group grid gap-6 py-10 transition hover:bg-white/[0.025] md:grid-cols-[0.55fr_0.95fr_0.2fr] md:items-center md:px-5"
+                className="group grid gap-6 border-b border-white/10 py-10 transition last:border-b-0 hover:bg-white/[0.025] md:grid-cols-[0.55fr_0.95fr_0.2fr] md:items-center md:px-5"
               >
                 <div>
                   <p className="text-sm font-medium text-rose-500">{project.type}</p>
-                  <h3 className="mt-3 text-3xl font-medium tracking-[-0.03em] text-white md:text-4xl">
+                  <h3 className="mt-3 text-3xl font-medium tracking-[-0.03em] text-white md:text-5xl">
                     {project.title}
                   </h3>
                 </div>
@@ -222,70 +187,92 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative mx-auto max-w-6xl px-5 py-32 sm:px-8 md:py-44">
+      <section id="profile" className="relative mx-auto max-w-6xl px-5 py-28 sm:px-8 md:py-36">
+        <div className="grid gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20">
+          <Reveal>
+            <div>
+              <h2 className="text-balance text-4xl font-medium leading-tight tracking-[-0.04em] text-white md:text-6xl">
+                A practical record, kept readable.
+              </h2>
+              <div className="mt-8 space-y-6 text-lg leading-9 text-zinc-400">
+                <p>
+                  Randi MT is the founder of Catatan Kripto, an Indonesian crypto community focused on education, ecosystem research, and hands-on participation.
+                </p>
+                <p>
+                  The work spans testnet participation, validator context, node operations, DeFi usage, airdrop research, and blockchain ecosystem mapping.
+                </p>
+              </div>
+            </div>
+          </Reveal>
+
+          <Reveal delay={0.08}>
+            <div className="border-y border-white/10">
+              {quickFacts.map((fact) => (
+                <div key={fact} className="flex items-center justify-between gap-8 border-b border-white/10 py-6 last:border-b-0">
+                  <span className="text-sm text-zinc-600">Profile</span>
+                  <p className="max-w-xs text-right text-base text-zinc-300">{fact}</p>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="relative mx-auto max-w-6xl px-5 py-28 sm:px-8 md:py-36">
         <Reveal>
-          <p className="mb-6 text-sm font-medium text-rose-500">Capabilities</p>
           <h2 className="max-w-4xl text-balance text-4xl font-medium leading-tight tracking-[-0.04em] text-white md:text-6xl">
-            Research, participation, and technical follow-through.
+            Ecosystem log.
           </h2>
         </Reveal>
 
-        <div className="mt-16 grid gap-10 md:grid-cols-3">
-          {capabilities.map((item, index) => (
-            <Reveal key={item.title} delay={index * 0.08}>
-              <article className="border-t border-white/10 pt-8">
-                <p className="text-sm font-medium text-zinc-600">0{index + 1}</p>
-                <h3 className="mt-8 text-2xl font-medium tracking-[-0.02em] text-white">
-                  {item.title}
+        <div className="mt-16 divide-y divide-white/10 border-y border-white/10">
+          {ecosystems.map((ecosystem, index) => (
+            <Reveal key={ecosystem.name} delay={index * 0.06}>
+              <div className="grid gap-5 py-7 md:grid-cols-[0.45fr_1fr] md:items-start">
+                <h3 className="text-2xl font-medium tracking-[-0.03em] text-white">
+                  {ecosystem.name}
                 </h3>
-                <p className="mt-5 text-base leading-8 text-zinc-500">{item.description}</p>
+                <p className="max-w-2xl text-base leading-8 text-zinc-500">
+                  {ecosystem.role}
+                </p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <section className="relative mx-auto max-w-6xl px-5 py-28 sm:px-8 md:py-36">
+        <Reveal>
+          <h2 className="max-w-4xl text-balance text-4xl font-medium leading-tight tracking-[-0.04em] text-white md:text-6xl">
+            Areas of work.
+          </h2>
+        </Reveal>
+
+        <div className="mt-16 grid gap-x-12 gap-y-10 md:grid-cols-2">
+          {areas.map((area, index) => (
+            <Reveal key={area.title} delay={index * 0.06}>
+              <article className="border-t border-white/10 pt-7">
+                <p className="text-sm font-medium text-zinc-600">0{index + 1}</p>
+                <h3 className="mt-7 text-2xl font-medium tracking-[-0.02em] text-white">
+                  {area.title}
+                </h3>
+                <p className="mt-5 max-w-xl text-base leading-8 text-zinc-500">
+                  {area.description}
+                </p>
               </article>
             </Reveal>
           ))}
         </div>
-
-        <Reveal delay={0.2}>
-          <div className="mt-20 flex flex-wrap gap-3">
-            {skills.map((skill) => (
-              <span
-                key={skill}
-                className="rounded-full border border-white/10 px-4 py-2 text-sm text-zinc-400 transition hover:border-rose-500/50 hover:text-white"
-              >
-                {skill}
-              </span>
-            ))}
-          </div>
-        </Reveal>
       </section>
 
-      <section className="relative mx-auto max-w-6xl px-5 py-32 sm:px-8 md:py-44">
+      <section id="contact" className="relative mx-auto max-w-6xl px-5 py-28 sm:px-8 md:py-36">
         <Reveal>
           <div className="border-y border-white/10 py-16 md:py-24">
-            <p className="mb-8 text-sm font-medium text-rose-500">Community</p>
             <h2 className="max-w-4xl text-balance text-4xl font-medium leading-tight tracking-[-0.04em] text-white md:text-6xl">
-              Catatan Kripto
-            </h2>
-            <p className="mt-8 max-w-3xl text-lg leading-9 text-zinc-400">
-              An Indonesian crypto community built around practical education, market context, ecosystem updates, and participation in early blockchain networks.
-            </p>
-            <div className="mt-12 grid gap-6 text-sm text-zinc-500 sm:grid-cols-3">
-              <div className="border-t border-white/10 pt-5">Indonesia</div>
-              <div className="border-t border-white/10 pt-5">Web3 research</div>
-              <div className="border-t border-white/10 pt-5">Community operations</div>
-            </div>
-          </div>
-        </Reveal>
-      </section>
-
-      <section id="contact" className="relative mx-auto max-w-6xl px-5 py-32 sm:px-8 md:py-44">
-        <Reveal>
-          <div className="max-w-4xl">
-            <p className="mb-6 text-sm font-medium text-rose-500">Contact</p>
-            <h2 className="text-balance text-4xl font-medium leading-tight tracking-[-0.04em] text-white md:text-6xl">
-              Let&apos;s build something that matters.
+              Want to talk crypto, testnets, or early ecosystems?
             </h2>
             <p className="mt-8 max-w-2xl text-lg leading-8 text-zinc-500">
-              Open for crypto research, early ecosystem work, community collaboration, and small web projects.
+              Links can be added later. For now, this page keeps the structure ready.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
@@ -304,7 +291,7 @@ export default function Home() {
           </div>
         </Reveal>
 
-        <footer className="mt-32 flex flex-col justify-between gap-6 border-t border-white/10 pt-8 text-sm text-zinc-600 sm:flex-row">
+        <footer className="mt-24 flex flex-col justify-between gap-6 border-t border-white/10 pt-8 text-sm text-zinc-600 sm:flex-row">
           <p>© 2026 Randi MT. Built with Next.js.</p>
           <div className="flex gap-6">
             <a className="transition hover:text-white" href="#home">
