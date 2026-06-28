@@ -28,20 +28,12 @@ const quickFacts = [
 
 const ecosystems = [
   {
-    name: "Dymension",
-    role: "RollApp research, early ecosystem tracking, and validator context.",
-  },
-  {
-    name: "Avail",
-    role: "Data availability network research and testnet participation.",
-  },
-  {
     name: "BEVM / GEB",
-    role: "Bitcoin L2 ecosystem exploration and operational tracking.",
+    role: "Bitcoin L2 ecosystem exploration, validator context, and operational tracking.",
   },
   {
-    name: "Linera",
-    role: "Microchain architecture research and testnet workflow mapping.",
+    name: "Dill Network",
+    role: "Node participation, network setup notes, and early infrastructure tracking.",
   },
 ];
 
@@ -130,23 +122,6 @@ export default function Home() {
           >
             A personal portfolio for Randi MT, known as Lerand. No inflated title, just the record.
           </motion.p>
-          <motion.div
-            variants={fadeUp}
-            transition={{ duration: 0.85, ease }}
-            className="mt-12 grid border-y border-white/10 text-sm text-zinc-500 sm:grid-cols-5"
-          >
-            {[
-              "Lyxsa",
-              "Catatan Kripto",
-              "Testnets",
-              "Nodes",
-              "DeFi",
-            ].map((item) => (
-              <div key={item} className="border-white/10 py-4 sm:border-r sm:last:border-r-0">
-                {item}
-              </div>
-            ))}
-          </motion.div>
         </motion.div>
       </section>
 
