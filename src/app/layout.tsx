@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Randi MT - Lerand Portfolio",
   description:
-    "Web3 researcher and builder focused on testnets, validators, node operations, and blockchain ecosystems.",
+    "Personal portfolio of Randi MT, covering testnets, nodes, DeFi participation, Catatan Kripto, and early blockchain ecosystems.",
 };
 
 export default function RootLayout({

@@ -29,44 +29,43 @@ const projects = [
       "A lending interface prototype focused on clean money-market flows, simple risk reading, and fast product iteration.",
   },
   {
-    title: "Testnet Farming Watchlist",
-    type: "Ops tracker",
+    title: "Testnet Watchlist",
+    type: "Research log",
     description:
-      "A daily system for tracking active campaigns, pending tasks, watched networks, paused projects, and ended testnets.",
+      "A working list for tracking active campaigns, pending tasks, watched networks, paused projects, and ended testnets.",
   },
   {
-    title: "Cloak Automation Framework",
-    type: "Automation layer",
+    title: "Catatan Kripto",
+    type: "Community notes",
     description:
-      "A browser automation workflow for preserving sessions, collecting proof, opening quest portals, and reducing repeated manual work.",
+      "An Indonesian crypto community focused on practical updates, ecosystem context, and simple explanations for people who actually use the networks.",
   },
 ];
 
 const capabilities = [
   {
-    title: "Web3 Research",
+    title: "Ecosystem Research",
     description:
-      "Filtering ecosystems, narratives, protocol mechanics, and early opportunities into practical decisions.",
+      "Following new networks, narratives, protocol mechanics, and early opportunities before they become obvious.",
   },
   {
-    title: "DeFi and Airdrops",
+    title: "Testnet Participation",
     description:
-      "Mapping campaign requirements, usage paths, token incentives, and repeatable daily execution systems.",
+      "Running through campaigns, usage paths, quests, feedback loops, and eligibility requirements with a practical lens.",
   },
   {
-    title: "Automation",
+    title: "Node and Validator Context",
     description:
-      "Building lightweight tools for repetitive browser workflows, watchlists, and operational reminders.",
+      "Documenting setup flows, network requirements, validator programs, and operational lessons from early infrastructure work.",
   },
 ];
 
 const skills = [
   "Web3 Research",
-  "DeFi Strategy",
-  "Testnet Farming",
-  "Airdrop Systems",
-  "Market Analysis",
-  "Automation",
+  "Testnet Participation",
+  "Airdrop Research",
+  "DeFi Usage",
+  "Market Notes",
   "Validators",
   "Node Operations",
   "Blockchain Ecosystems",
@@ -120,21 +119,21 @@ export default function Home() {
             transition={{ duration: 0.8, ease }}
             className="mb-8 text-sm font-medium text-rose-500"
           >
-            Web3 Researcher & Builder. Founder of Catatan Kripto.
+            Testnets, nodes, DeFi, and early network participation.
           </motion.p>
           <motion.h1
             variants={fadeUp}
             transition={{ duration: 0.9, ease }}
             className="max-w-5xl text-balance text-6xl font-medium leading-[0.95] tracking-[-0.065em] text-white sm:text-7xl md:text-8xl lg:text-9xl"
           >
-            Clear systems for noisy markets
+            Learning in public across early crypto networks
           </motion.h1>
           <motion.p
             variants={fadeUp}
             transition={{ duration: 0.85, ease }}
             className="mt-8 max-w-2xl text-lg leading-8 text-zinc-400 md:text-xl"
           >
-            Randi MT, known as Lerand, builds research workflows, testnet systems, and practical Web3 tools for early blockchain ecosystems.
+            Randi MT, known as Lerand, has spent years inside crypto testnets, node setups, DeFi tasks, and community research. This site tracks the work without pretending it is bigger than it is.
           </motion.p>
           <motion.div
             variants={fadeUp}
@@ -163,7 +162,7 @@ export default function Home() {
         <Reveal>
           <p className="mb-6 text-sm font-medium text-rose-500">About</p>
           <h2 className="max-w-5xl text-balance text-4xl font-medium leading-tight tracking-[-0.04em] text-white md:text-6xl">
-            Building at the intersection of research, infrastructure, and early communities.
+            A practical record of testnets, nodes, DeFi tasks, and community work.
           </h2>
         </Reveal>
 
@@ -174,7 +173,7 @@ export default function Home() {
                 Randi MT is the founder of Catatan Kripto, an Indonesian crypto community focused on education, ecosystem research, and hands-on participation.
               </p>
               <p>
-                The work spans testnets, validators, node operations, DeFi workflows, airdrop systems, and blockchain ecosystem mapping.
+                The work spans testnet participation, validator context, node operations, DeFi usage, airdrop research, and blockchain ecosystem mapping.
               </p>
             </div>
           </Reveal>
@@ -198,7 +197,7 @@ export default function Home() {
         <Reveal>
           <p className="mb-6 text-sm font-medium text-rose-500">Selected work</p>
           <h2 className="max-w-4xl text-balance text-4xl font-medium leading-tight tracking-[-0.04em] text-white md:text-6xl">
-            Tools and platforms built for on-chain operators.
+            Selected notes, experiments, and web projects from the crypto side.
           </h2>
         </Reveal>
 
@@ -231,7 +230,7 @@ export default function Home() {
         <Reveal>
           <p className="mb-6 text-sm font-medium text-rose-500">Capabilities</p>
           <h2 className="max-w-4xl text-balance text-4xl font-medium leading-tight tracking-[-0.04em] text-white md:text-6xl">
-            Research depth meets execution speed.
+            Research, participation, and technical follow-through.
           </h2>
         </Reveal>
 
@@ -290,7 +289,7 @@ export default function Home() {
               Let&apos;s build something that matters.
             </h2>
             <p className="mt-8 max-w-2xl text-lg leading-8 text-zinc-500">
-              Open for Web3 research, ecosystem collaboration, automation workflows, and product experiments.
+              Open for crypto research, early ecosystem work, community collaboration, and small web projects.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
