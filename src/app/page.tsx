@@ -23,20 +23,16 @@ const ecosystems = [
 
 const projects = [
   {
-    title: "Virelix",
-    type: "DeFi interface",
+    title: "Lyxsa",
+    type: "Cross-chain USDC app",
+    href: "https://lyxsa.xyz",
     description:
-      "A lending interface prototype focused on clean money-market flows, simple risk reading, and fast product iteration.",
-  },
-  {
-    title: "Testnet Watchlist",
-    type: "Research log",
-    description:
-      "A working list for tracking active campaigns, pending tasks, watched networks, paused projects, and ended testnets.",
+      "A CCTP V2 cross-chain USDC interface for moving funds across EVM testnets with a clean landing page and app flow.",
   },
   {
     title: "Catatan Kripto",
     type: "Community notes",
+    href: "#contact",
     description:
       "An Indonesian crypto community focused on practical updates, ecosystem context, and simple explanations for people who actually use the networks.",
   },
@@ -205,7 +201,7 @@ export default function Home() {
           {projects.map((project, index) => (
             <Reveal key={project.title} delay={index * 0.08}>
               <a
-                href="#contact"
+                href={project.href}
                 className="group grid gap-6 py-10 transition hover:bg-white/[0.025] md:grid-cols-[0.55fr_0.95fr_0.2fr] md:items-center md:px-5"
               >
                 <div>
