@@ -32,36 +32,38 @@ const ecosystems = [
 
 const areas = [
   {
-    title: "Research",
+    title: "Research and analysis",
     description:
-      "Following new networks, narratives, protocol mechanics, and early opportunities before they become obvious.",
+      "Tracking ecosystems, narratives, protocol mechanics, campaign requirements, and early opportunities.",
   },
   {
-    title: "Participation",
+    title: "Product and testnet QA",
     description:
-      "Running through testnets, DeFi flows, quests, feedback loops, and eligibility requirements with a practical lens.",
+      "Running through user flows, testnet tasks, DeFi actions, wallet paths, feedback loops, and bug-prone steps.",
   },
   {
-    title: "Infrastructure context",
+    title: "Node and validator context",
     description:
-      "Documenting setup flows, network requirements, validator programs, and operational lessons from early infrastructure work.",
+      "Documenting setup flows, network requirements, validator programs, and operational lessons from infrastructure work.",
   },
   {
-    title: "Community notes",
+    title: "Community and documentation",
     description:
-      "Turning messy ecosystem updates into simple notes for people who actually use the networks.",
+      "Turning messy ecosystem updates into clear notes, guides, and context for users and community teams.",
   },
 ];
 
 const skills = [
   "Web3 research",
-  "Testnet participation",
-  "Airdrop research",
-  "DeFi usage",
-  "Node operations",
+  "Testnet operations",
+  "Product QA",
+  "DeFi testing",
+  "Node setup notes",
   "Validator context",
-  "Ecosystem mapping",
-  "Community notes",
+  "Documentation",
+  "Community research",
+  "GitHub workflow",
+  "Basic frontend",
 ];
 
 const fadeUp = {
@@ -113,21 +115,21 @@ export default function Home() {
             transition={{ duration: 0.8, ease }}
             className="mb-8 text-sm font-medium text-rose-500"
           >
-            Testnets, nodes, DeFi, and early network participation.
+            Available for Web3 research, testnet operations, and ecosystem support.
           </motion.p>
           <motion.h1
             variants={fadeUp}
             transition={{ duration: 0.9, ease }}
             className="max-w-5xl text-balance text-6xl font-medium leading-[0.92] tracking-[-0.065em] text-white sm:text-7xl md:text-8xl"
           >
-            Learning across testnets, DeFi paths, and early network notes.
+            Web3 researcher focused on testnets, nodes, DeFi, and community research.
           </motion.h1>
           <motion.p
             variants={fadeUp}
             transition={{ duration: 0.85, ease }}
             className="mt-8 max-w-2xl text-lg leading-8 text-zinc-400 md:text-xl"
           >
-            A personal portfolio for Randi MT, known as Lerand. No inflated title, just the record.
+            I help teams research ecosystems, test products, document flows, and support early network participation.
           </motion.p>
         </motion.div>
       </section>
@@ -136,10 +138,10 @@ export default function Home() {
         <Reveal>
           <div className="max-w-4xl">
             <h2 className="text-balance text-4xl font-medium leading-tight tracking-[-0.04em] text-white md:text-6xl">
-              Selected work first.
+              Selected work.
             </h2>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-500">
-              Two things worth showing now. More can come later when the links and proof are cleaner.
+              Projects and community work that show how I research, test, document, and ship in Web3 environments.
             </p>
           </div>
         </Reveal>
@@ -173,14 +175,14 @@ export default function Home() {
         <Reveal>
           <div className="max-w-4xl border-y border-white/10 py-14 md:py-20">
             <h2 className="text-balance text-4xl font-medium leading-tight tracking-[-0.04em] text-white md:text-6xl">
-              A practical record, kept readable.
+              Practical Web3 experience, translated for work.
             </h2>
             <div className="mt-8 max-w-3xl space-y-6 text-lg leading-9 text-zinc-400">
               <p>
-                Randi MT is the founder of Catatan Kripto, an Indonesian crypto community focused on education, ecosystem research, and hands-on participation.
+                Randi MT, known as Lerand, has spent years participating in crypto testnets, DeFi products, node programs, and early ecosystem campaigns.
               </p>
               <p>
-                The work spans testnet participation, validator context, node operations, DeFi usage, airdrop research, and blockchain ecosystem mapping.
+                The work translates into research, product testing, documentation, community support, and ecosystem operations for Web3 teams.
               </p>
             </div>
           </div>
@@ -190,7 +192,32 @@ export default function Home() {
       <section className="relative mx-auto max-w-6xl px-5 py-28 sm:px-8 md:py-36">
         <Reveal>
           <h2 className="max-w-4xl text-balance text-4xl font-medium leading-tight tracking-[-0.04em] text-white md:text-6xl">
-            Ecosystem log.
+            Open to roles.
+          </h2>
+        </Reveal>
+
+        <Reveal delay={0.08}>
+          <div className="mt-14 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              "Web3 Research Assistant",
+              "Testnet Operations",
+              "Ecosystem Operations",
+              "Community Research",
+              "Junior Product QA",
+              "Developer Relations Support",
+            ].map((role) => (
+              <div key={role} className="border border-white/10 px-5 py-4 text-sm text-zinc-300">
+                {role}
+              </div>
+            ))}
+          </div>
+        </Reveal>
+      </section>
+
+      <section className="relative mx-auto max-w-6xl px-5 py-28 sm:px-8 md:py-36">
+        <Reveal>
+          <h2 className="max-w-4xl text-balance text-4xl font-medium leading-tight tracking-[-0.04em] text-white md:text-6xl">
+            Relevant network experience.
           </h2>
         </Reveal>
 
@@ -213,7 +240,7 @@ export default function Home() {
       <section id="skills" className="relative mx-auto max-w-6xl px-5 py-28 sm:px-8 md:py-36">
         <Reveal>
           <h2 className="max-w-4xl text-balance text-4xl font-medium leading-tight tracking-[-0.04em] text-white md:text-6xl">
-            Skills and areas.
+            Skills for Web3 roles.
           </h2>
         </Reveal>
 
@@ -251,10 +278,10 @@ export default function Home() {
         <Reveal>
           <div className="border-y border-white/10 py-16 md:py-24">
             <h2 className="max-w-4xl text-balance text-4xl font-medium leading-tight tracking-[-0.04em] text-white md:text-6xl">
-              Want to talk crypto, testnets, or early ecosystems?
+              Open to Web3 work, research roles, and ecosystem support.
             </h2>
             <p className="mt-8 max-w-2xl text-lg leading-8 text-zinc-500">
-              Links can be added later. For now, this page keeps the structure ready.
+              Best fit: Web3 research assistant, testnet operations, ecosystem operations, community research, or junior product QA for crypto teams.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
