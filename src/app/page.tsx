@@ -19,13 +19,6 @@ const selectedWork = [
   },
 ];
 
-const quickFacts = [
-  "Based in Indonesia",
-  "Founder of Catatan Kripto",
-  "Early blockchain ecosystems",
-  "No inflated title",
-];
-
 const ecosystems = [
   {
     name: "BEVM / GEB",
@@ -177,34 +170,21 @@ export default function Home() {
       </section>
 
       <section id="profile" className="relative mx-auto max-w-6xl px-5 py-28 sm:px-8 md:py-36">
-        <div className="grid gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20">
-          <Reveal>
-            <div>
-              <h2 className="text-balance text-4xl font-medium leading-tight tracking-[-0.04em] text-white md:text-6xl">
-                A practical record, kept readable.
-              </h2>
-              <div className="mt-8 space-y-6 text-lg leading-9 text-zinc-400">
-                <p>
-                  Randi MT is the founder of Catatan Kripto, an Indonesian crypto community focused on education, ecosystem research, and hands-on participation.
-                </p>
-                <p>
-                  The work spans testnet participation, validator context, node operations, DeFi usage, airdrop research, and blockchain ecosystem mapping.
-                </p>
-              </div>
+        <Reveal>
+          <div className="max-w-4xl border-y border-white/10 py-14 md:py-20">
+            <h2 className="text-balance text-4xl font-medium leading-tight tracking-[-0.04em] text-white md:text-6xl">
+              A practical record, kept readable.
+            </h2>
+            <div className="mt-8 max-w-3xl space-y-6 text-lg leading-9 text-zinc-400">
+              <p>
+                Randi MT is the founder of Catatan Kripto, an Indonesian crypto community focused on education, ecosystem research, and hands-on participation.
+              </p>
+              <p>
+                The work spans testnet participation, validator context, node operations, DeFi usage, airdrop research, and blockchain ecosystem mapping.
+              </p>
             </div>
-          </Reveal>
-
-          <Reveal delay={0.08}>
-            <div className="border-y border-white/10">
-              {quickFacts.map((fact) => (
-                <div key={fact} className="flex items-center justify-between gap-8 border-b border-white/10 py-6 last:border-b-0">
-                  <span className="text-sm text-zinc-600">Profile</span>
-                  <p className="max-w-xs text-right text-base text-zinc-300">{fact}</p>
-                </div>
-              ))}
-            </div>
-          </Reveal>
-        </div>
+          </div>
+        </Reveal>
       </section>
 
       <section className="relative mx-auto max-w-6xl px-5 py-28 sm:px-8 md:py-36">
