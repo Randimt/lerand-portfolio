@@ -22,7 +22,7 @@ const selectedWork = [
 const ecosystems = [
   {
     name: "BEVM / GEB",
-    role: "Bitcoin L2 ecosystem exploration, validator context, and operational tracking.",
+    role: "Bitcoin L2 ecosystem exploration, network research, and operational tracking.",
   },
   {
     name: "Dill Network",
@@ -42,9 +42,9 @@ const areas = [
       "Running through user flows, testnet tasks, DeFi actions, wallet paths, feedback loops, and bug-prone steps.",
   },
   {
-    title: "Node and validator context",
+    title: "Node and validator program participation",
     description:
-      "Documenting setup flows, network requirements, validator programs, and operational lessons from infrastructure work.",
+      "Following setup flows, network requirements, validator-related programs, and operational lessons from testnet infrastructure.",
   },
   {
     title: "Community and documentation",
@@ -59,7 +59,7 @@ const skills = [
   "Product QA",
   "DeFi testing",
   "Node setup notes",
-  "Validator context",
+  "Validator program research",
   "Documentation",
   "Community research",
   "GitHub workflow",
