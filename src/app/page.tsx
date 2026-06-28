@@ -60,6 +60,17 @@ const areas = [
   },
 ];
 
+const skills = [
+  "Web3 research",
+  "Testnet participation",
+  "Airdrop research",
+  "DeFi usage",
+  "Node operations",
+  "Validator context",
+  "Ecosystem mapping",
+  "Community notes",
+];
+
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
   visible: { opacity: 1, y: 0 },
@@ -87,6 +98,9 @@ export default function Home() {
             </a>
             <a className="transition hover:text-white" href="#profile">
               Profile
+            </a>
+            <a className="transition hover:text-white" href="#skills">
+              Skills
             </a>
             <a className="transition hover:text-white" href="#contact">
               Contact
@@ -216,10 +230,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative mx-auto max-w-6xl px-5 py-28 sm:px-8 md:py-36">
+      <section id="skills" className="relative mx-auto max-w-6xl px-5 py-28 sm:px-8 md:py-36">
         <Reveal>
           <h2 className="max-w-4xl text-balance text-4xl font-medium leading-tight tracking-[-0.04em] text-white md:text-6xl">
-            Areas of work.
+            Skills and areas.
           </h2>
         </Reveal>
 
@@ -238,6 +252,19 @@ export default function Home() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal delay={0.18}>
+          <div className="mt-16 flex flex-wrap gap-3 border-t border-white/10 pt-8">
+            {skills.map((skill) => (
+              <span
+                key={skill}
+                className="rounded-full border border-white/10 px-4 py-2 text-sm text-zinc-400 transition hover:border-rose-500/50 hover:text-white"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </Reveal>
       </section>
 
       <section id="contact" className="relative mx-auto max-w-6xl px-5 py-28 sm:px-8 md:py-36">
