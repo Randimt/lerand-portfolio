@@ -130,7 +130,7 @@ export default function Home() {
             transition={{ duration: 0.9, ease }}
             className="max-w-5xl text-balance text-6xl font-medium leading-[0.92] tracking-[-0.065em] text-white sm:text-7xl md:text-8xl"
           >
-            Web3 researcher focused on testnets, nodes, DeFi, and community research.
+            LERAND MT
           </motion.h1>
           <motion.p
             variants={fadeUp}
