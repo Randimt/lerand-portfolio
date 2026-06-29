@@ -137,7 +137,7 @@ export default function Home() {
             transition={{ duration: 0.85, ease }}
             className="mt-8 max-w-2xl text-lg leading-8 text-zinc-400 md:text-xl"
           >
-            I help teams research ecosystems, test products, document flows, and support early network participation.
+            Web3 research, product testing, community notes, and early network participation. Built from years of hands-on crypto work.
           </motion.p>
         </motion.div>
       </section>
