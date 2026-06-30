@@ -13,7 +13,7 @@ const selectedWork = [
   {
     title: "Catatan Kripto",
     type: "Community notes",
-    href: "#contact",
+    href: "https://t.me/CatatanKripto",
     description:
       "An Indonesian crypto community focused on practical updates, ecosystem context, and simple explanations for people who actually use the networks.",
   },
@@ -299,10 +299,10 @@ export default function Home() {
                 Connect on X
               </a>
               <a
-                href="https://t.me/ini_lerand"
+                href="https://t.me/CatatanKripto"
                 className="inline-flex h-12 items-center justify-center rounded-full border border-white/10 px-6 text-sm font-medium text-zinc-300 transition hover:-translate-y-0.5 hover:border-white/20 hover:text-white active:translate-y-0"
               >
-                Telegram
+                Catatan Kripto
               </a>
             </div>
           </div>
