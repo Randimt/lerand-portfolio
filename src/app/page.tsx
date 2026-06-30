@@ -12,66 +12,66 @@ const selectedWork = [
   },
   {
     title: "Catatan Kripto",
-    type: "Community notes",
+    type: "Crypto education platform",
     href: "https://t.me/CatatanKripto",
     description:
-      "An Indonesian crypto community focused on practical updates, ecosystem context, and simple explanations for people who actually use the networks.",
+      "An Indonesian crypto community focused on crypto education, ecosystem context, and practical Web3 onboarding.",
   },
 ];
 
 const ecosystems = [
   {
     name: "BEVM / GEB",
-    role: "Bitcoin L2 ecosystem exploration, network research, and operational tracking.",
+    role: "Configured, researched, and monitored Bitcoin L2 infrastructure workflows across the BEVM / GEB ecosystem.",
   },
   {
     name: "Dill Network",
-    role: "Node participation, network setup notes, and early infrastructure tracking.",
+    role: "Deployed, configured, and maintained node infrastructure for Dill Network testnet environments.",
   },
   {
     name: "Drosera Network",
-    role: "Early network participation, protocol research, and testnet task tracking.",
+    role: "Researched protocol architecture, executed testnet workflows, and maintained operational records for Drosera Network.",
   },
   {
     name: "Cysic",
-    role: "Node participation, setup tracking, and early prover network research.",
+    role: "Deployed and configured Cysic node infrastructure while researching early prover network requirements.",
   },
 ];
 
 const areas = [
   {
-    title: "Research and analysis",
+    title: "Protocol research",
     description:
-      "Tracking ecosystems, narratives, protocol mechanics, campaign requirements, and early opportunities.",
+      "Researching protocol mechanics, infrastructure requirements, ecosystem design, and technical documentation.",
   },
   {
-    title: "Product and testnet QA",
+    title: "Blockchain QA",
     description:
-      "Running through user flows, testnet tasks, DeFi actions, wallet paths, feedback loops, and bug-prone steps.",
+      "Testing wallet flows, DeFi actions, bridge paths, smart contract interactions, and user-facing protocol workflows.",
   },
   {
-    title: "Node and validator program participation",
+    title: "Node and validator operations",
     description:
-      "Following setup flows, network requirements, validator-related programs, and operational lessons from testnet infrastructure.",
+      "Deploying, configuring, and maintaining node environments while documenting infrastructure requirements and validator operations.",
   },
   {
-    title: "Community and documentation",
+    title: "Technical documentation",
     description:
-      "Turning messy ecosystem updates into clear notes, guides, and context for users and community teams.",
+      "Writing clear technical notes, setup references, ecosystem summaries, and user-facing protocol documentation.",
   },
 ];
 
 const skills = [
-  "Web3 research",
-  "Testnet operations",
-  "Product QA",
-  "DeFi testing",
-  "Node setup notes",
-  "Validator program research",
-  "Documentation",
-  "Community research",
-  "GitHub workflow",
-  "Basic frontend",
+  "Protocol Research",
+  "Node Infrastructure",
+  "Blockchain QA",
+  "DeFi Protocol Testing",
+  "Validator Operations",
+  "Smart Contract Development",
+  "Technical Documentation",
+  "Infrastructure Monitoring",
+  "GitHub Workflow",
+  "Frontend Development",
 ];
 
 const fadeUp = {
@@ -123,7 +123,7 @@ export default function Home() {
             transition={{ duration: 0.8, ease }}
             className="mb-8 text-sm font-medium text-rose-500"
           >
-            Available for Web3 research, testnet operations, and ecosystem support.
+            Available for blockchain infrastructure, node operations, and protocol research.
           </motion.p>
           <motion.h1
             variants={fadeUp}
@@ -137,7 +137,7 @@ export default function Home() {
             transition={{ duration: 0.85, ease }}
             className="mt-8 max-w-2xl text-lg leading-8 text-zinc-400 md:text-xl"
           >
-            Web3 research, product testing, community notes, and early network participation. Built from years of hands-on crypto work.
+            Web3 infrastructure engineer focused on node deployment, validator operations, and protocol-level research across Bitcoin L2, DA layers, and ZK networks.
           </motion.p>
         </motion.div>
       </section>
@@ -207,12 +207,12 @@ export default function Home() {
         <Reveal delay={0.08}>
           <div className="mt-14 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              "Web3 Research Assistant",
-              "Testnet Operations",
-              "Ecosystem Operations",
-              "Community Research",
-              "Junior Product QA",
-              "Developer Relations Support",
+              "Blockchain Infrastructure Engineer",
+              "Node / Validator Operator",
+              "Web3 Developer",
+              "Protocol Researcher",
+              "Blockchain QA Engineer",
+              "Developer Relations Engineer",
             ].map((role) => (
               <div key={role} className="border border-white/10 px-5 py-4 text-sm text-zinc-300">
                 {role}
@@ -225,7 +225,7 @@ export default function Home() {
       <section className="relative mx-auto max-w-6xl px-5 py-28 sm:px-8 md:py-36">
         <Reveal>
           <h2 className="max-w-4xl text-balance text-4xl font-medium leading-tight tracking-[-0.04em] text-white md:text-6xl">
-            Relevant network experience.
+            Infrastructure experience.
           </h2>
         </Reveal>
 
@@ -248,7 +248,7 @@ export default function Home() {
       <section id="skills" className="relative mx-auto max-w-6xl px-5 py-28 sm:px-8 md:py-36">
         <Reveal>
           <h2 className="max-w-4xl text-balance text-4xl font-medium leading-tight tracking-[-0.04em] text-white md:text-6xl">
-            Skills for Web3 roles.
+            Technical skills.
           </h2>
         </Reveal>
 
@@ -286,10 +286,10 @@ export default function Home() {
         <Reveal>
           <div className="border-y border-white/10 py-16 md:py-24">
             <h2 className="max-w-4xl text-balance text-4xl font-medium leading-tight tracking-[-0.04em] text-white md:text-6xl">
-              Open to Web3 work, research roles, and ecosystem support.
+              Open to blockchain infrastructure, node operations, and Web3 development roles.
             </h2>
             <p className="mt-8 max-w-2xl text-lg leading-8 text-zinc-500">
-              Best fit: Web3 research assistant, testnet operations, ecosystem operations, community research, or junior product QA for crypto teams.
+              Best fit: blockchain infrastructure engineering, node and validator operations, protocol research, blockchain QA, and Web3 development.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
